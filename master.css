@@ -103,6 +103,9 @@ button{
  transition: 0.5s; 
   color: white;
 }
+button:focus{
+  backgroun:darkred;
+}
 button:hover{
   
   background: none;
