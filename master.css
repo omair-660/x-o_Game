@@ -55,6 +55,7 @@ span {
   font-size: 50px;
   font-weight: 600;
   cursor: pointer;
+  border-radius: 4px;
   transition: 0.5s;
       box-shadow: 1px 1px 3px #8a8a8a;
 }
@@ -89,4 +90,21 @@ a{
     color: #000;
     letter-spacing: 4px;
   }
+}
+button{
+ margin-right: 39px ;
+  outline: none;
+  background: #8956f1;
+  margin-top: -40px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  padding: 6px 20px;
+  border: 2px solid transparent;
+ transition: 0.5s; 
+  color: white;
+}
+button:hover{
+  
+  background: none;
+  border-color: #8956f1;
 }

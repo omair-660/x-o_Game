@@ -9,6 +9,13 @@ function reeload() {
     location.reload()
   },2100);
 }
+function btnReload(){
+setTimeout(function () {
+    location.reload()
+  },100);
+}
+
+
 function winner() {
 for(let i =1; i<=9; i++ ){
   sqare[i] = document.getElementById("item" + i).innerHTML;
