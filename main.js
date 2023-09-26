@@ -99,24 +99,24 @@ else if (sqare[1] == sqare[5] && sqare[5] == sqare[9] && sqare[5] != "") {
 }
 }
 
-
 function game(id) {
-
   let element = document.getElementById(id);
 
-  element.classList.add("active");
+  // تحقق مما إذا كان هناك فائز بالفعل
+  if (!title.innerHTML.includes("winner")) {
+    element.classList.add("active");
 
-if (turn === "x" && element.innerHTML == "") {
-  element.innerHTML = "X";
-  turn = "o";
-  title.innerHTML = "O";
-}
-else if (turn === "o" && element.innerHTML == "") {
-element.innerHTML = "O";
-turn = "x";
-title.innerHTML = "X";
-}
-winner()
+    if (turn === "x" && element.innerHTML == "") {
+      element.innerHTML = "X";
+      turn = "o";
+      title.innerHTML = "O";
+    } else if (turn === "o" && element.innerHTML == "") {
+      element.innerHTML = "O";
+      turn = "x";
+      title.innerHTML = "X";
+    }
+    winner();
+  }
 }
 
 
